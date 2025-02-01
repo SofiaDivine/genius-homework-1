@@ -19,6 +19,20 @@
   font-weight: 700;
   src: url('../fonts/roboto-v47-latin-700.woff2') format('woff2');
 }
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
 
 :root {
   --brand-color-ligth: #2B7FFF;
@@ -43,10 +57,130 @@ ul {
   list-style-type: none;
 }
 
+.accent {
+  color: var(--brand-color-ligth);
+}
+
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
 /*Button*/
 .button {
 background-color: var(--brand-color-ligth);
 color: #fff;
 border-radius: 32px;
+border: 2px solid var(--brand-color-ligth);
 padding: 16px 32px 16px 32px;
+margin-top: 20px;
+gap: 10px;
+font-weight: 600;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid var(--brand-color-ligth);
+  color: var(--brand-color-ligth);
+}
+
+/*Link*/
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--brand-color-ligth);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*Logo*/
+.logo {
+  font-family: 'Play', sans-serif;
+  color: var(--brand-color-ligth);
+  line-height: 0.95;
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo:hover {
+text-decoration: none;
+}
+
+/*Main Section*/
+.mainLogo {
+  font-family: 'Play', sans-serif;
+  color: var(--brand-color-ligth);
+  font-size: 140px;
+  line-height: 0.8;
+}
+
+.main-section-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/*About section*/
+.accent-about-title {
+  text-transform: capitalize;
+}
+
+.about-section-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.accent-about-text {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.about-section-img {
+  border-radius: 50%;
+  width: 327px;
+  height: 327px;
+  top: 657px;
+  left: 841px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+/*Procedures section*/
+.procedures-img {
+width: 344px;
+height: 456px;
+left: 344px;
+gap: 0px;
+border-radius: 120px 4px 120px 4px;
+opacity: 0px;
+background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+}
+
+.procedures-text {
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+/*Contact section*/
+.contact-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.17;
+}
+
+/*Footer*/
+.adress-link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.adress-link:hover {
+  color: var(--brand-color-ligth);
+}
+
+.adress-copyright {
+    font-size: 13px;
+    line-height: 1.15;
+    color: #747272;
 }
